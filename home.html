@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-section {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .jumbotron h1, .jumbotron p {
+            color: white;
+        }
+        .card {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero-section text-center d-flex justify-content-center align-items-center">
+    <div class="container">
+        <h1 class="display-3">Welcome to Our Home Page</h1>
+        <p class="lead">Your source for interesting articles and updates</p>
+        <a href="#main-content" class="btn btn-primary btn-lg mt-4">Explore</a>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Our Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" aria-label="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" aria-label="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" aria-label="Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main id="main-content" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Article Section -->
+            <article class="col-lg-8 mb-4">
+                <h2 class="mb-4">Latest Updates</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Welcome to Our Home Page</h3>
+                        <p class="card-text">Welcome to our cozy corner of the internet! Here you'll find the latest updates and articles about our projects and activities.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Latest News</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Nulla facilisi. Sed vulputate, nisi in vehicula dapibus, lacus nisi faucibus orci, ac laoreet nulla nunc ut nisi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">More Articles</h3>
+                        <p class="card-text">Proin sit amet sapien id lacus imperdiet luctus. Vivamus luctus eros id diam vulputate, id aliquet ligula malesuada. Aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Sidebar Section -->
+            <aside class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Featured Content</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="link1.html" target="_blank" aria-label="Link 1">Featured Article 1</a></li>
+                            <li><a href="link2.html" target="_blank" aria-label="Link 2">Featured Article 2</a></li>
+                            <li><a href="link3.html" target="_blank" aria-label="Link 3">Featured Article 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">About Us</h3>
+                        <p>Learn more about our organization and what drives us.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        &copy; 2024 Our Company. All rights reserved.
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/blogger-logo-icon-png-28.png" type="image/x-icon">
+
+    <title>My Simple Webpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-container .card-body {
+            flex-grow: 1;
+        }
+
+        .card-container .card-body .btn {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid text-white text-center bg-dark"
+        style="background-image: url(''); background-size: cover;">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Blog</h1>
+            <p class="lead">Your source for interesting articles and updates</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Our Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html" aria-label="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" aria-label="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" aria-label="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <section class="col-md-8">
+                    <h2 class="mb-4">Latest Articles</h2>
+                    <div class="row">
+                        <article class="col-md-6 mb-4">
+                            <div class="card h-100 card-container">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Article Image">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Article Title 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                        auctor orci in lobortis elementum.</p>
+                                    <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 mb-4">
+                            <div class="card h-100 card-container">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Article Image">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Article Title 2</h5>
+                                    <p class="card-text">Integer sagittis felis ac justo maximus, in hendrerit libero
+                                        blandit.</p>
+                                    <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 mb-4">
+                            <div class="card h-100 card-container">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Article Image">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Article Title 3</h5>
+                                    <p class="card-text">Integer sagittis felis ac justo maximus, in hendrerit libero
+                                        blandit.</p>
+                                    <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Add more articles as needed -->
+                    </div>
+                </section>
+
+                <aside class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Featured Article</h2>
+                            <img src="https://via.placeholder.com/300" class="img-fluid mb-3"
+                                alt="Featured Article Image">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet libero id est
+                                aliquet pharetra.</p>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Connect with Us</h2>
+                            <p>Follow us on social media for more updates:</p>
+                            <div>
+                                <a href="#" class="btn btn-primary mr-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                <a href="#" class="btn btn-info mr-2"><i class="fab fa-twitter"></i> Twitter</a>
+                                <a href="#" class="btn btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; 2024 My Simple Webpage. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
